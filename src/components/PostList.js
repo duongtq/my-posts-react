@@ -104,8 +104,8 @@ const PostList = ({ currentUser, setCurrentUser, postList, setPostList, action, 
                             <input style={{width: '200px', height: '40px'}} type="text" placeholder="Search by title..." onChange={(evt) => setSearchTerm(evt.target.value)} />
                             <select style={{width: '200px', height: '40px'}} id="filter" onChange={() => changeFilterType()}>
                                 <option value="0" defaultChecked='true'>None</option>
-                                <option value="1">Title (A -> Z)</option>
-                                <option value="2">Title (Z -> A)</option>
+                                <option value="1">Title (A - Z)</option>
+                                <option value="2">Title (Z - A)</option>
                                 <option value="3">Date (ASC)</option>
                                 <option value="4">Date (DESC)</option>
                             </select>

@@ -39,7 +39,7 @@ const Header = ({ postList, setPostList, currentUser, setCurrentUser, action, se
                 <div>
                     <nav>
                         <a href="/homepage">
-                            <img src={logo} alt="" />
+                            <img src='https://github.com/duongtq/my-posts-react/blob/master/src/assets/logo.jpeg' alt="" />
                         </a>
 
                         <ul>
