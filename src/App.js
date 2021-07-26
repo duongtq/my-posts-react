@@ -1,23 +1,37 @@
-import logo from './logo.svg';
+import React, { useState } from 'react'
+import Header from './components/Header';
+import 'bootstrap';
 import './App.css';
 
-function App() {
+const App = () => {
+  // Data:
+  // user:
+  //   id
+  //   username
+  //   authority
+  //   token
+  // post list:
+
+  const [postList, setPostList] = useState([]);
+
+  const [action, setAction] = useState("LOGIN");
+
+  const [currentUser, setCurrentUser] = useState({
+    id: null,
+    username: null,
+    authorities: null,
+    token: null
+  });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <Header 
+        postList={postList} 
+        setPostList={setPostList} 
+        currentUser={currentUser}
+        setCurrentUser={setCurrentUser}
+        action={action}
+        setAction={setAction} />
     </div>
   );
 }

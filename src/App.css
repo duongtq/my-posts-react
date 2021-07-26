@@ -1,38 +1,70 @@
-.App {
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333333;
+  overflow: hidden;
+  height: 60px;
+}
+
+img {
+  float: left
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: rgb(250, 246, 246);
   text-align: center;
+  padding: 16px;
+  text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav a img {
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  width: 60px;
+  height: 60px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header-img {
+  width: 100%;
+  height: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.post-edit, .post-detail {
+  width: 100px;
+  height: 40px;
 }
 
-.App-link {
-  color: #61dafb;
+html {
+  overflow-y: scroll;
+} 
+
+.margin-bottom {
+  margin-bottom: 5px;
+  vertical-align: baseline;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.post-info {
+  font-family: 'Patrick Hand', cursive;
+  font-size: larger;
 }
+
+button {
+  color: aliceblue;
+}
+
+a {
+  text-decoration: none;
+}
+
+label {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+
